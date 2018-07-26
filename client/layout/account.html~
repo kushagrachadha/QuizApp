@@ -1,0 +1,9 @@
+<template name = "accountLayout">
+	<header>
+		<center><h2><bold>Account - Quizapp!</bold></h2></center>
+	</header>
+	<main>
+		Hey from accounts
+	</main>
+	{{> Template.dynamic template=footer}}
+</template>

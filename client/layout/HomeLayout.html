@@ -1,0 +1,17 @@
+<template name = "HomeLayout">
+<header>
+    <center><h2> Click on the right options</h2></center>
+</header>
+<main>
+  <center>
+    <h2>{{count}}: {{question}}</h2>
+      {{#each options}}
+      	<div id="answer" value="{{this}}" style=""><h3>{{this}}</h3></div>
+      {{/each}}
+      <br>
+      <h1>{{current}}</h1>
+  <h2> {{result}} Answers correct, out of 10</h2>
+  </center>
+</main>
+{{> Template.dynamic template=footer}}
+</template>

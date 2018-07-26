@@ -1,0 +1,9 @@
+<template name = 'resultsLayout'>
+	<header>
+		<center><h2><bold>Results of the Quiz</bold></h2></center>
+	</header>
+	<main>
+		Hey
+	</main>
+	{{> Template.dynamic template=footer}}
+</template>

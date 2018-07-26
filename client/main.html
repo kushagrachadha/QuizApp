@@ -1,0 +1,14 @@
+<head>
+  <title>quizapp</title>
+</head>
+<body>
+  <center>
+    <h1><a href = '/'>Quizapp!</a></h1>
+    {{#if currentUser}}
+      Welcome
+    {{else}}
+      To increase the productivity, please
+    {{/if}}
+    {{> loginButtons}}
+  </center>
+</body>

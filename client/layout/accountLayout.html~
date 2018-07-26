@@ -1,0 +1,18 @@
+<template name = "accountLayout">
+	<header>
+		<center><h2><bold>Account - Quizapp!</bold></h2></center>
+	</header>
+	<main>
+		<left><h1> PROFILE: </h1></left>
+		<center>
+		<table>
+		<tr>	<th>XP Points   	:</th>		<td>	{{xp}}		 </td>  </tr>
+		<tr>	<th>Total Quiz Played 	:</th> 		<td>	{{quizAmount}}	 </td>  </tr>
+		<tr> 	<th>Total Questions 	:</th>		<td>	{{questionAmount}}</td> </tr>
+		<tr>	<th>Total Attempts 	:</th> 		<td>	{{attemptAmount}}  that is {{attemptPercent}} % of all questions. </td></tr>
+		<tr>	<th>Total Correct 	:</th>		<td>	 {{correctAmount}} that makes you {{correctPercent}} correct.</td></tr>
+		<table>
+		</center>
+	</main>
+	{{> Template.dynamic template=footer}}
+</template>

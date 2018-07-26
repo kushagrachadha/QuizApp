@@ -1,0 +1,22 @@
+<template name = 'SelectLayout'>
+<header>
+    <center><h2> Please select Category to start the quiz </h2></center>
+</header>
+<main>
+<center>
+  <br>
+  <form method="post" class="quizsel">
+    <select id="category-select">
+        <option disabled="disabled" selected="selected">Please Select</option>
+        {{#each categories}}
+            <option value="{{this}}">{{this}}</option>
+        {{/each}}
+    </select>
+    <br>
+    <br>
+    <button><a href='/start'>Start Quiz</a></button>
+  </form>
+</center>
+</main>
+{{> Template.dynamic template=footer}}
+</template>
